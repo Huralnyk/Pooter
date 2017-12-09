@@ -120,6 +120,7 @@
 		A91D605E1FDC7AD2008D272D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A97CEA831FDC650D000F59AC /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -145,11 +146,11 @@
 		A97CEA6B1FDC650D000F59AC /* Pooter */ = {
 			isa = PBXGroup;
 			children = (
-				A91D603C1FDC6AC1008D272D /* Resources */,
 				A91D603D1FDC6C50008D272D /* Routers */,
 				A91D603B1FDC6AB6008D272D /* Storyboards */,
-				A97CEA8C1FDC661F000F59AC /* Supporting Files */,
 				A91D60401FDC6D17008D272D /* ViewControllers */,
+				A91D603C1FDC6AC1008D272D /* Resources */,
+				A97CEA8C1FDC661F000F59AC /* Supporting Files */,
 			);
 			path = Pooter;
 			sourceTree = "<group>";
@@ -157,10 +158,9 @@
 		A97CEA801FDC650D000F59AC /* PooterTests */ = {
 			isa = PBXGroup;
 			children = (
+				A91D60591FDC7AD2008D272D /* Test Cases */,
 				A91D605C1FDC7AD2008D272D /* Mocks */,
 				A91D605E1FDC7AD2008D272D /* Supporting Files */,
-				A91D60591FDC7AD2008D272D /* Test Cases */,
-				A97CEA831FDC650D000F59AC /* Info.plist */,
 			);
 			path = PooterTests;
 			sourceTree = "<group>";
@@ -458,7 +458,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TEB3BLN4BF;
-				INFOPLIST_FILE = PooterTests/Info.plist;
+				INFOPLIST_FILE = "PooterTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huralnyk.PooterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -475,7 +475,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TEB3BLN4BF;
-				INFOPLIST_FILE = PooterTests/Info.plist;
+				INFOPLIST_FILE = "PooterTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huralnyk.PooterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
