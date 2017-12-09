@@ -10,10 +10,11 @@
 		A91D603F1FDC6C5F008D272D /* ApplicationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91D603E1FDC6C5F008D272D /* ApplicationRouter.swift */; };
 		A91D60421FDC6D5F008D272D /* InitialViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91D60411FDC6D5F008D272D /* InitialViewController.storyboard */; };
 		A91D60441FDC6D74008D272D /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91D60431FDC6D74008D272D /* InitialViewController.swift */; };
+		A91D60601FDC7AD2008D272D /* ApplicationRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91D605B1FDC7AD2008D272D /* ApplicationRouterTests.swift */; };
+		A91D60611FDC7AD2008D272D /* MockWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91D605D1FDC7AD2008D272D /* MockWindow.swift */; };
 		A97CEA6D1FDC650D000F59AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97CEA6C1FDC650D000F59AC /* AppDelegate.swift */; };
 		A97CEA741FDC650D000F59AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A97CEA731FDC650D000F59AC /* Assets.xcassets */; };
 		A97CEA771FDC650D000F59AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A97CEA751FDC650D000F59AC /* LaunchScreen.storyboard */; };
-		A97CEA821FDC650D000F59AC /* PooterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97CEA811FDC650D000F59AC /* PooterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,13 +31,14 @@
 		A91D603E1FDC6C5F008D272D /* ApplicationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationRouter.swift; sourceTree = "<group>"; };
 		A91D60411FDC6D5F008D272D /* InitialViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InitialViewController.storyboard; sourceTree = "<group>"; };
 		A91D60431FDC6D74008D272D /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		A91D605B1FDC7AD2008D272D /* ApplicationRouterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationRouterTests.swift; sourceTree = "<group>"; };
+		A91D605D1FDC7AD2008D272D /* MockWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockWindow.swift; sourceTree = "<group>"; };
 		A97CEA691FDC650D000F59AC /* Pooter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pooter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A97CEA6C1FDC650D000F59AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A97CEA731FDC650D000F59AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A97CEA761FDC650D000F59AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A97CEA781FDC650D000F59AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A97CEA7D1FDC650D000F59AC /* PooterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PooterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A97CEA811FDC650D000F59AC /* PooterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PooterTests.swift; sourceTree = "<group>"; };
 		A97CEA831FDC650D000F59AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,37 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		A91D60591FDC7AD2008D272D /* Test Cases */ = {
+			isa = PBXGroup;
+			children = (
+				A91D605A1FDC7AD2008D272D /* Routers */,
+			);
+			path = "Test Cases";
+			sourceTree = "<group>";
+		};
+		A91D605A1FDC7AD2008D272D /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				A91D605B1FDC7AD2008D272D /* ApplicationRouterTests.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		A91D605C1FDC7AD2008D272D /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A91D605D1FDC7AD2008D272D /* MockWindow.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		A91D605E1FDC7AD2008D272D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		A97CEA601FDC650D000F59AC = {
 			isa = PBXGroup;
 			children = (
@@ -124,7 +157,9 @@
 		A97CEA801FDC650D000F59AC /* PooterTests */ = {
 			isa = PBXGroup;
 			children = (
-				A97CEA811FDC650D000F59AC /* PooterTests.swift */,
+				A91D605C1FDC7AD2008D272D /* Mocks */,
+				A91D605E1FDC7AD2008D272D /* Supporting Files */,
+				A91D60591FDC7AD2008D272D /* Test Cases */,
 				A97CEA831FDC650D000F59AC /* Info.plist */,
 			);
 			path = PooterTests;
@@ -252,7 +287,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A97CEA821FDC650D000F59AC /* PooterTests.swift in Sources */,
+				A91D60601FDC7AD2008D272D /* ApplicationRouterTests.swift in Sources */,
+				A91D60611FDC7AD2008D272D /* MockWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,11 +10,15 @@ import UIKit
 
 class ApplicationRouter {
     
-    private let window = UIWindow(frame: UIScreen.main.bounds)
+    private let window: UIWindow?
+    
+    init(window: UIWindow) {
+        self.window = window
+    }
     
     func openInitialScreen() {
-        window.rootViewController = InitialViewController.makeController()
-        window.makeKeyAndVisible()
+        window?.rootViewController = InitialViewController.makeController()
+        window?.makeKeyAndVisible()
     }
     
 }

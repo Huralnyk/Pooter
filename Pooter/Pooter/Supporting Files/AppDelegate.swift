@@ -11,7 +11,7 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    let router = ApplicationRouter()
+    let router = ApplicationRouter(window: UIWindow(frame: UIScreen.main.bounds))
     
     func application(
         _ application: UIApplication,
