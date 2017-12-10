@@ -16,13 +16,35 @@
                     <view key="view" contentMode="scaleToFill" id="X3A-xK-nzw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shake" translatesAutoresizingMaskIntoConstraints="NO" id="t5J-Fp-dtb">
+                                <rect key="frame" x="0.0" y="77.5" width="375" height="512"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHAKE A MOVIE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKg-lr-Oth">
+                                <rect key="frame" x="20" y="20" width="335" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MZJ-Ko-wEL" firstAttribute="trailing" secondItem="rKg-lr-Oth" secondAttribute="trailing" constant="20" id="Ii6-7z-ah1"/>
+                            <constraint firstItem="rKg-lr-Oth" firstAttribute="leading" secondItem="MZJ-Ko-wEL" secondAttribute="leading" constant="20" id="NWh-6k-s05"/>
+                            <constraint firstItem="t5J-Fp-dtb" firstAttribute="leading" secondItem="MZJ-Ko-wEL" secondAttribute="leading" id="Xfx-ic-miT"/>
+                            <constraint firstItem="rKg-lr-Oth" firstAttribute="top" secondItem="MZJ-Ko-wEL" secondAttribute="top" id="Z1K-DC-iED"/>
+                            <constraint firstItem="t5J-Fp-dtb" firstAttribute="trailing" secondItem="MZJ-Ko-wEL" secondAttribute="trailing" id="aIq-RP-V0U"/>
+                            <constraint firstItem="t5J-Fp-dtb" firstAttribute="centerY" secondItem="X3A-xK-nzw" secondAttribute="centerY" id="bu2-tv-ruB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MZJ-Ko-wEL"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XHI-ca-sA0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="143" y="146"/>
+            <point key="canvasLocation" x="141.59999999999999" y="145.27736131934034"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="shake" width="512" height="512"/>
+    </resources>
 </document>
